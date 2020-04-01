@@ -96,7 +96,9 @@
         })
     function filterText() {
         const sort = characters
-            .filter(val => val.name.toLowerCase().includes(this.value.toLowerCase()))
+            .filter(val => val.name
+            .toLowerCase()
+            .includes(this.value.toLowerCase()))
             .map(val => `<li>${val.name}</li>`)
 
         if (sort.length) {
